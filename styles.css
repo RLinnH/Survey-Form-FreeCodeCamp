@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+
+body{
+  background-image: url(https://images.unsplash.com/photo-1580234811497-9df7fd2f357e?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY1MTEwNTQ3MA&ixlib=rb-1.2.1&q=85);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  font-family: montserrat;
+  color: white;
+}
+header{
+  text-align: center;
+  padding: 1rem;
+  text-shadow: 0rem 0rem 0.4rem black;
+}
+header, fieldset{
+  margin: 0 0.3rem;
+  width: auto;
+}
+fieldset{
+  border: none;
+}
+label{
+padding: 0.3rem 0;
+}
+#name, #email, #number, #submit, label, select, textarea{
+  width: 100%;
+  display: block;
+}
+#name, #email, #number, select, textarea, #submit{
+  border: solid white;
+  border-radius: 0.5rem;
+  box-shadow: 0rem 0rem 0.2rem white;
+}
+textarea{
+  resize: none;
+  height: 10rem;
+  font-size: 14px;
+  padding:0.1rem 0.3rem;
+}
+form{
+   background-image: url('data:image/svg+xml,%3Csvg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z" fill="%239C92AC" fill-opacity="0.4" fill-rule="evenodd"/%3E%3C/svg%3E');
+  background-attachment: fixed;
+  background-color: gray;
+  border-radius: 1rem;
+  max-width: 35rem;
+  margin: auto;
+  padding: 0.7rem 0.3rem;
+  box-shadow: 0rem 0rem 1rem black;
+}
+#submit{
+  margin: 0 auto;
+  font-size: 1rem;
+  color: white;
+  background-color: rgb(104, 56, 176);
+  height: 2rem;
+  padding: 0 14rem;
+  font-size: 1.5rem;
+  border: none;
+  box-shadow:0 0 0.2rem rgb(104, 56, 176);
+ }
+#submit:hover{
+  color: gray;
+}
+
+

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gaming Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="title">How Do You Game?</h1>
+      <p id="description">Fill us in on your gaming style.</p>
+    </header>
+    <!--Form Start-->
+    <form id="survey-form">
+      <fieldset id="field1">
+      <label id="name-label">Name: </label>
+      <input id="name" type="text" placeholder="Enter your name" required>
+      <label id="email-label">Email: </label>
+      <input id="email" type="email" placeholder="Enter your email" required>
+      <label id="number-label">Age: </label>
+      <input id="number" type="number" min="18" max="101" placeholder="Select">
+      </fieldset>
+      <fieldset id="field2">
+        <!--Dropdown-->
+        <label>How many hours do you game per week?</label>
+        <select id="dropdown" name="hours">
+          <option value="" disabled selected hidden>Select</option>
+          <option value="light">0-5 hours per week (light)</option>
+          <option value="medium">6-15 hours per week (medium)</option>
+          <option value="heavy">16+ hours per week (heavy)</option>
+        </select>
+        <br>
+        <!--Radio 1-->
+        <label id="radio-label">How do you play?</label>
+        <label for="online"> 
+          <input id="online" type="radio" name="on-off-both" value="online">Online
+        </label>
+        <label for="offline">
+          <input id="offline" type="radio" name="on-off-both" value="offline">Offline
+        </label>
+        <label for="both">
+          <input id="both" type="radio" name="on-off-both" value="both">Both
+        </label>
+        <br>
+        <!--Checkbox 1-->
+        <label id="checkbox-label">Which platform(s) do you play on?</label>
+        <label for="console">
+          <input id="console" value="console" type="checkbox" name="platform">Console
+        </label>
+        <label for="pc">
+          <input id="pc" value="pc" type="checkbox" name="platform">PC
+        </label>
+       <label for="mobile">
+          <input id="mobile" value="mobile" type="checkbox" name="platform">Mobile
+       </label>
+      <label for="other">
+          <input id="other" value="other" type="checkbox" name="platform">Other
+      </label>
+      <br>
+      <!--Checkbox 2-->
+      <label id="checkbox-label">Which genre(s) do you play?</label>
+      <label for="rpg">
+        <input id="rpg" value="rpg" type="checkbox" name="genre">RPG
+      </label>
+      <label for="fps">
+        <input id="fps" value="fps" type="checkbox" name="genre">FPS
+      </label>
+      <label for="sandbox">
+        <input id="sandbox" value="sandbox" type="checkbox" name="genre">Sandbox
+      </label>
+      <label for="mmo">
+        <input id="mmo" value="mmo" type="checkbox" name="genre">MMO
+      </label>
+      <label for="puzzle">
+        <input id="puzzle" value="puzzle/strategy" type="checkbox" name="genre">Puzzle/Strategy
+      </label>
+      <label for="other">
+        <input id="other" value="other" type="checkbox" name="genre">Other</label>
+      </label>
+      </fieldset>
+      <!--Textarea-->
+      <fieldset id="field3">
+        <label id="textarea-label">Have more to share?</label>
+          <textarea id="textarea" maxlength="500" placeholder="Tell us here..."></textarea>
+          <br>
+          <!--Radio2-->
+          <label id="subscribe">Subscribe to our email list?</label>
+          <label for="yes"><input type="radio" value="yes" name="sub"> Yes</label>
+          <label for="no"><input type="radio" value="no" name="sub"> No
+          </label>
+          <br>
+          <!--Submit-->
+          <input type="submit" id="submit">
+      </fieldset>
+    </form>
+  </body>
+</html>
